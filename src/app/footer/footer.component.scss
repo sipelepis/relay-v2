@@ -1,0 +1,116 @@
+
+:host{
+    footer{
+        background-color: var(--ds-footer-bg);
+        text-align: center;
+        z-index: 0;
+        // border-top: 1px solid var(--rv-primary-color);
+        padding: 0;
+
+        p {
+            margin: 0;
+          }
+
+          div > img {
+            height: var(--ds-footer-logo-height);
+          }
+
+
+          .top-footer {
+            background-color: #efb702;
+            padding: 0;
+            margin: calc(0 * -1);
+            div>div>div{
+                h5{
+                    color: white;
+                    font-weight: bold;
+                }
+                div.dropdown-divider{
+                    color:#595959;
+                    background-color: #595959;
+                    border-top: 2px solid #595959;
+                }
+                ul>li>a,p{
+                    color: var(--rv-primary-color);
+                    :hover:active{
+                        color: #{darken(#444444, 5%)};
+                    }
+                }
+                li{
+                    color: var(--rv-primary-color);
+                }
+                svg{
+                  color: white;
+
+                    :hover:active{
+                        color: #{darken(white, 5%)};
+                  }
+                }
+                li>svg{
+                    color: white;
+                }
+
+            }
+          }
+
+          .bottom-footer {
+            background-color: #444444 !important;
+            ul {
+              li {
+                display: inline-flex;
+
+                a {
+                  color: inherit
+                }
+
+                &:not(:last-child) {
+                  &:after {
+                    content: '';
+                    // border-right: 1px var(--bs-secondary) solid;
+                  }
+
+                }
+              }
+            }
+          }
+    }
+}
+.button-svg{
+color: white;
+}
+
+.navbar-expand-md.navbar-container {
+  @media screen and (max-width: 768px) {
+    > .container {
+      padding: 0 var(--bs-spacer);
+      a.navbar-brand {
+        display: none;
+      }
+      .navbar-collapsed {
+        display: none;
+      }
+    }
+    padding: 0;
+  }
+  // height: 80px;
+}
+
+a.navbar-brand img {
+  max-height: 100px;
+}
+@media screen and (max-width:992px) {
+.nav-link{
+
+  font-weight: bold;
+}
+ul.navbar-nav{
+  gap:10px
+}
+}
+@media screen and (min-width:992px) {
+ul.navbar-nav{
+  gap:30px;
+  font-size: 1rem;
+  font-weight: bold;
+      }
+  }

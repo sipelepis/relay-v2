@@ -1,0 +1,31 @@
+@import 'bootstrap';
+@import '../app.component.scss';
+@media screen and (min-width: map-get($grid-breakpoints, md)) {
+    nav.navbar {
+      display: none;
+
+    }
+    .header {
+      background-color: var(--ds-header-bg);
+    }
+  }
+
+  .navbar-brand img {
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      height: var(--ds-header-logo-height-xs);
+    }
+  }
+  .navbar-nav {
+    ::ng-deep a.nav-link {
+      color: var(--ds-navbar-link-color);
+
+    }
+
+    ::ng-deep a.nav-link:hover {
+      color: var(--ds-navbar-link-color-hover);
+    }
+  }
+  nav.navbar{
+    // border-bottom: 5px var(--rv-primary-color) solid;
+    align-items: baseline;
+  }

@@ -1,0 +1,27 @@
+<nav style="background-color: #efb802b6 !important"  class="navbar navbar-expand-md navbar-light p-0 navbar-container" role="navigation">
+    <div class="container h-100">
+        <a class="navbar-brand my-2" routerLink="/home">
+            <img src="/assets/images/relay-logo2.png"/>
+        </a>
+        <div id="navbar-collapse collapse" class="w-100 h-100n">
+            <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="'/about'" (click)="isMenuCollapsed = true">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="'/services'" (click)="isMenuCollapsed = true">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="'/FAQs'" (click)="isMenuCollapsed = true">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="'/blog'" (click)="isMenuCollapsed = true">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="'/contactus'" (click)="isMenuCollapsed = true">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <app-auth-nav-menu></app-auth-nav-menu>
+    </div>
+</nav>

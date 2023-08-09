@@ -1,0 +1,101 @@
+<footer class="text-lg-start">
+    <div *ngIf="showTopFooter" class="top-footer">
+        <div class=" container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 justify-content-center text-center align-items-center">
+                    <h5 class="text-uppercase">
+
+                    </h5>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled mb-0 mx-5 justify-content-center">
+                        <li style="display: flex;" class="justify-content-center">
+                            <a class="navbar-brand my-2" routerLink="/home">
+                                <img src="/assets/images/relay-logo2.png"/>
+                            </a>
+                        </li>
+                        <li style="display: flex;" class="justify-content-center">
+                            This is our marketing message
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase">
+
+                    </h5>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled mb-0 mx-5 justify-content-center">
+                        <li style="display: flex;" class="justify-content-center">
+                            <a routerLink="/home" class="">Home</a>
+                        </li>
+                        <li style="display: flex;" class="justify-content-center">
+                            <a routerLink="/about" class="">About</a>
+                        </li>
+                        <li style="display: flex;" class="justify-content-center">
+                            <a routerLink="/services" class="">Services</a>
+                        </li>
+                        <li style="display: flex;" class="justify-content-center">
+                            <a routerLink="/FAQs" class="">FAQs</a>
+                        </li>
+                        <li style="display: flex;" class="justify-content-center">
+                            <a routerLink="/blog" class="">Blog</a>
+                        </li>
+                        <li style="display: flex;" class="justify-content-center">
+                            <a routerLink="/contactus" class="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase">
+
+                    </h5>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled mb-0 mx-5 justify-content-center text-center">
+                        <div class="text-center mb-3">
+
+                            <p style="font-size:14px">Follow Us</p>
+                            <button type="button" class="btn btn-link btn-primary btn-floating mx-1" style="background-color: #3b5998 !important;">
+                              <i class="fab fa-facebook-f"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-link btn-primary btn-floating mx-1" style="background-color: #dd4c39 !important;">
+                              <i class="fab fa-google me-2"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-link btn-primary btn-floating mx-1" style="background-color: #0082ca !important;">
+                              <i class="fab fa-linkedin-in me-2"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-link btn-primary btn-floating mx-1" style="background-color: #333!important; color:#fafafa !important;">
+                              <i class="fab fa-github me-2"></i>
+                            </button>
+                        </div>
+                        <div class="input-group mb-4">
+                            <input style="border: 2px #444444  solid !important;" type="email" id="newsletterEmail" placeholder="Send your email for newsletter" class="form-control" required="required">
+                        </div>
+                        <button class="btn btn-primary" type="button">
+                            SUBMIT
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="showBottomFooter" class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
+        <div class="content-container " style="position:relative;">
+          <p class="m-0">
+            </p>
+          <ul class="footer-info list-unstyled small d-flex justify-content-center mb-0">
+            <li style="display: flex;" class="justify-content-center px-3">
+                <a routerLink="/contactus" class="">Privacy Policy</a>
+            </li>•
+            <li style="display: flex;" class="justify-content-center px-3">
+                <p style="font-size:12px"><i class="fa fa-copyright" aria-hidden="true"></i>  2022 All Rights Reserved</p>
+            </li>•
+
+            <li style="display: flex;" class="justify-content-center px-3">
+                <a routerLink="/contactus" class="">Terms of Condition</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</footer>

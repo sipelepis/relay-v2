@@ -1,0 +1,212 @@
+@import 'bootstrap';
+
+span{
+    font-size: 50px;
+    color:var(--rv-primary-color);
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.05);
+    span{
+        font-size: 60px;
+        color: var(--rv-primary-color);
+    }
+}
+.card-body{
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    padding-right: 0px ;padding-left: 0px;
+}
+.container-fluid{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    background-color: #efb702 !important;
+}
+h4{
+    color:var(--rv-primary-bg-color) !important;
+    font-weight: bold;
+    font-size: 35px;
+}
+.card-title{
+    color:var(--rv-primary-color) !important;
+}
+p{
+    font-size: 25px;
+}
+.p-card{
+    color:var(--rv-primary-bg-color) !important;
+}
+.btn-primary, .btn-primary:focus {
+	color: var(--rv-primary-bg-color) !important;
+	background: var(--rv-primary-color)  !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  // box-shadow: none;
+  border: none;
+}
+.btn-secondary:active {
+	color: var(--rv-primary-color) !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  // box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.075) !important;
+	// border: 2px var(--rv-primary-color) solid !important;
+  border: none;
+}
+.btn-secondary, .btn-secondary:focus {
+	color: var(--rv-primary-color) !important;
+  font-weight: bold;
+  background-color: var(--rv-primary-bg-color) !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 4px rgba(0, 0, 0, 0.100) !important;
+  // box-shadow: 0 0 0 0.2rem rgba(213,160,33, 0.5) !important;
+  box-shadow: none;
+  border: none;
+  // border: 1px black solid !important;
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 1024px) {
+    .colrow{
+        width: 100%;
+    }
+
+    .icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid rgba(0,0,0,.05);
+        span{
+            font-size: 30px;
+            color: var(--rv-primary-color);
+        }
+    }
+    span{
+        font-size: 30px;
+        color: var(--rv-primary-color);
+    }
+
+    h4{
+        color:var(--rv-primary-bg-color) !important;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    p{
+        font-size: 17px;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    h4{
+        color:var(--rv-primary-bg-color) !important;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    h4{
+        color:var(--rv-primary-bg-color) !important;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+@media only screen
+and (min-width : 1224px) {
+
+    .info, .contact{
+        width: 50%;
+    }
+    .info{
+        border-radius: 10px 0 0 10px;
+    }
+    .contact{
+        border-radius:0 10px 10px 0;
+    }
+    .aboutrelay-img{
+        width: 50%;
+    }
+    .aboutrelay-info{
+        width: 50%;
+
+    }
+    .btTxt{
+        height: 100px;
+    }
+    .container-bh-3{
+        display:flex
+    }
+    .container-bh-2{
+        display:flex
+    }
+    .mb-0{
+        line-height: 20pt;
+    }
+}
+@media only screen
+and (max-width : 1224px) {
+    .mobilephone{
+        width: 100%;;
+    }
+    .aboutrelay-img{
+        display: none;
+    }
+}
+
+@media only screen
+and (min-width : 1921px) and (min-height: 1081px){
+    .cap1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom:250px !important;
+    }
+
+    .card{
+        border-radius: 50px;
+    }
+
+    .container-fluid{
+        max-width: 1524px !important;
+
+    }
+    .mb-0{
+        line-height: 20pt;
+    }
+}

@@ -1,0 +1,14 @@
+.outer-wrapper {
+    display: flex;
+    margin: 0;
+  }
+
+.inner-wrapper {
+flex: 1 1 auto;
+flex-flow: column nowrap;
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+width: 100%;
+position: relative;
+}

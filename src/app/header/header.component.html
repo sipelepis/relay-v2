@@ -1,0 +1,40 @@
+
+<nav style="background-color: #efb702 !important" role="navigation" class="navbar navbar-expand-md p-0 navbar-container" >
+  <div class="container" style=" width: 100%;
+  white-space: nowrap;">
+  <div></div>
+    <a class="navbar-brand m-2" href="#">
+        <img src="/assets/images/relay-logo2.png">
+    </a>
+    <div class="d-flex flex-grow-1 ml-auto justify-content-end align-items-center">
+      <a routerLink="/registerCarRental" routerLinkActive="active" class="loginLink px-1">Login<span class="sr-only">(current)</span>
+      </a>
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        &#9776;
+      </button>
+    </div>
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse pl-2">
+
+      <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-center active" [routerLink]="'/about'" (click)="isMenuCollapsed = true">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center active" [routerLink]="'/services'" (click)="isMenuCollapsed = true">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center active" [routerLink]="'/FAQs'" (click)="isMenuCollapsed = true">FAQs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center active" [routerLink]="'/blog'" (click)="isMenuCollapsed = true">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-center active" [routerLink]="'/contactus'" (click)="isMenuCollapsed = true">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<app-navbar></app-navbar>
+
